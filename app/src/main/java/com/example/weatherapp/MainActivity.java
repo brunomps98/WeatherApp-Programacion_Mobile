@@ -28,4 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Intent miIntent = new Intent(this, ListActivity.class);
         startActivity(miIntent);
     }
+
+    public void irDetalle(View view) {
+        Intent myIntent = new Intent(this, DetailActivity.class);
+        myIntent.putExtra("nombreCiudad","Amsterdam");
+        startActivity(myIntent);
+
+    }
 }

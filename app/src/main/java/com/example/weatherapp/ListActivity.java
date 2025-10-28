@@ -1,6 +1,9 @@
 package com.example.weatherapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -42,5 +45,20 @@ public class ListActivity extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter(this, ciudades);
         listView.setAdapter(adapter);
-    };
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                irDetalle((String) ciudades.get(position));
+
+            }
+        });
+    }
+
+    private void irDetalle(String ciudad) {
+        Intent myIntent = new Intent(this, DetailActivity.class);
+        myIntent.putExtra("nombreCiudad", ciudad);
+
+        startActivity(myIntent);
+    }
 }
