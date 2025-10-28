@@ -1,1 +1,64 @@
+# ===============================================
+# Archivos generados por el Sistema Operativo
+# ===============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===============================================
+# Archivos de Build y Generados por Android
+# ===============================================
+# Carpeta de salida principal de builds
 /build
+/app/build
+/app/build/
+
+# Archivos de instalación (APKs y Bundles)
+*.apk
+*.aab
+*.jar
+*.aar
+
+# =---------------------------------------------
+# Archivos de Propiedades Locales
+# ===============================================
+local.properties
+
+# ===============================================
+# Archivos del IDE (Android Studio / IntelliJ)
+# ===============================================
+# Carpetas de configuración del IDE
+.idea/
+.idea/workspace.xml
+.idea/libraries/
+
+# Archivos de configuración del IDE
+*.iml
+*.ipr
+*.iws
+modules.xml
+.idea
+misc.xml
+vcs.xml
+
+# ===============================================
+# Archivos de Gradle
+# ===============================================
+.gradle
+gradle/
+gradlew
+gradlew.bat
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ===============================================
+# Otros
+# ===============================================
+# Capturas de pantalla
+captures/
+# Registros (logs)
+*.log
