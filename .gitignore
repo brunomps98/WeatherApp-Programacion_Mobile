@@ -1,15 +1,33 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+﻿# Archivos del sistema operativo
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+ehthumbs.db
+.Spotlight-V100
+.Trashes
+
+# Archivos de Android/Gradle
+/build/
+/app/build/
+.gradle/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Archivos del IDE (Android Studio / IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Propiedades locales (rutas del SDK, etc.)
 local.properties
+
+# Archivos de instalación
+*.apk
+*.ap_
+*.aab
+*.aar
+*.jar
+
+# Logs y otros
+*.log
