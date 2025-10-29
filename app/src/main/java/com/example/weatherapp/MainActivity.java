@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void irDetalle(View view) {
         Intent myIntent = new Intent(this, DetailActivity.class);
-        myIntent.putExtra("nombreCiudad","Amsterdam");
+    //    myIntent.putExtra("nombreCiudad","Amsterdam");
+        myIntent.putExtra("lat", -31.73271f);
+        myIntent.putExtra("lon", -60.52897f);
         startActivity(myIntent);
 
     }
+
+
 }
